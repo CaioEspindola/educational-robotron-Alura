@@ -22,6 +22,7 @@
           class="robo"
           src="../robotron-2000/img/xenogears-robo.png"
           alt="Robo do jogo Xenogears"
+          id="id-robotron"
         />
         <figcaption class="titulo">WELTALL<br />3000</figcaption>
       </section>
@@ -59,9 +60,14 @@
             <div class="peca">
               <label for="" class="peca-titulo">Braços</label>
               <div class="controle">
-                <buttom class="controle-ajuste">-</buttom>
-                <input type="text" class="controle-contador" value="00" />
-                <buttom class="controle-ajuste">+</buttom>
+                <buttom class="controle-ajuste" id="subtrair">-</buttom>
+                <input
+                  type="text"
+                  class="controle-contador"
+                  value="00"
+                  id="braco"
+                />
+                <buttom class="controle-ajuste" id="somar">+</buttom>
               </div>
             </div>
             <hr class="linha" />
@@ -110,5 +116,6 @@
         </form>
       </section>
     </main>
+    <script src="./main.js"></script>
   </body>
 </html>
